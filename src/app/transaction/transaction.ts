@@ -1,4 +1,4 @@
-export class Transaction {
+export interface Transaction {
     _id?: string;
     date: Date;
     category: string;
