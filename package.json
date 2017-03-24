@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "concurrent \"node express\\app.js\" \"ng serve\"",
+    "start": "concurrent \"nodemon express\" \"ng serve\"",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -33,6 +33,7 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
+    "nodemon": "^1.11.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",

@@ -184,7 +184,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:2701
     // Initialize the app.
     var server = app.listen(process.env.PORT || 3000, function () {
         var port = server.address().port;
-        console.log("Foo now running on port - ", port);
+        console.log("Midas Web API now running on port - ", port);
     });
 
 });
