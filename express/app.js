@@ -65,6 +65,8 @@ app.get('/api/injectdata', function (req, res) {
             });
         });
 
+        responses.push('Finished injecting records')
+
         res.send(responses.join('\n'));
     }
 });

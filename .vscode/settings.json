@@ -2,6 +2,10 @@
 {
     "files.exclude": {
         "node_modules": true,
+        "express/node_modules": true,
+        ".vscode": true,
+        "**/npm-debug.log": true,
+        ".editorconfig": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,

@@ -26,6 +26,9 @@ The project is being built using the n-tier design pattern to isolate functional
 
 The `start` script will kick off the express server [http://127.0.0.1:3000](http://127.0.0.1:3000) and at the same time will initiate the `ng serve` which will trigger the typescript to compile, host the result [http://127.0.0.1:4200](http://127.0.0.1:4200) and monitor the directory for code changes and recompile the transcript to avoid restarting the server. (in some rare cases you might need to break and restart the server.) If you want to handle these two independantly you can run `ng serve` in the main directory to monitor the main application, in another console go to the express folder and use `nodemon` which will monitor the web api for changes and restart the server.
 
+## Generate Some Dummy Data
+
+visit [http://127.0.0.1:3000/api/injectdata](http://127.0.0.1:3000/api/injectdata) to trigger a call to inject some dummy data into the database.
 
 ## Application Structure
 I am gradually building out the application exploring different methods for organizing the project as I discover new ways to create components and refactoring to inject new patterns. This path is helping me to also learn how to better leverage my development environment ([Visual Studio Code](https://code.visualstudio.com/)) to streamline the development process. 
