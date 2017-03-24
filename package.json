@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "concurrent \"nodemon express\" \"ng serve\"",
+    "start": "concurrent \"npm run express\" \"ng serve\"",
+    "express": "nodemon express",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
