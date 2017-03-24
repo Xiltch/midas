@@ -1,4 +1,4 @@
-import { Transaction } from './transaction'
+import { Transaction } from './models/transaction'
 
 export var TRANSACTIONS: Transaction[] = [
     { _id: '1', type: 'DEBIT', category: 'Dummy', date: new Date('02/03/2017'), description: "PURCHASE SHOP A", amount: -10.00, currency: 'USD', source: 'DEBIT_CARD', balance: 250.00, reference: null, account: 'Demo' },
