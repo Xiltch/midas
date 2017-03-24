@@ -1,0 +1,20 @@
+<div>
+  <h2>Transcations</h2>
+  <ul class="transactions" (click)="onSelect($event)">
+    <label class="date">Date</label>
+    <label class="account">Account</label>
+    <label class="description">Description</label>
+    <label class="amount">Amount</label>
+    <li *ngFor="let transaction of transactions" (click)="onSelect($event,transaction)">
+      <div *ngIf="transaction !== selectedTransaction">
+        <div class="date field">{{transaction.date | date:'yyyy-MM-dd'}}</div>
+        <div class="account field">{{transaction.account}}</div>
+        <div class="description field">{{transaction.description}}</div>
+        <div class="amount field">{{transaction.amount | currency:transaction.currency:true}}</div>
+      </div>
+      <div class="details" *ngIf="transaction === selectedTransaction">
+        <app-transaction [transaction]="selectedTransaction"></app-transaction>
+      </div>
+    </li>
+  </ul>
+</div>
