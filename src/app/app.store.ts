@@ -1,4 +1,4 @@
-import { Transaction } from './transaction/models/transaction';
+import { Transaction } from './transaction/transaction.model';
 
 export interface AppStore {
     transactions: Transaction[];

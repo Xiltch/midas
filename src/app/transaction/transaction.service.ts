@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers, RequestOptions } from '@angular/http'
 import { Observable } from 'rxjs/Rx'
-import { Transaction } from '../models/transaction';
+import { Transaction } from './transaction.model';
 
 @Injectable()
 export class TransactionService {

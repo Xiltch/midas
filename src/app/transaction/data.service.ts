@@ -1,6 +1,7 @@
-import { Transaction } from './models/transaction'
+import { Transaction } from './transaction.model'
 
-export var TRANSACTIONS: Transaction[] = [
+// Mock/Test transactions to use for testing
+export const TRANSACTIONS: Transaction[] = [
     { _id: '1', type: 'DEBIT', category: 'Dummy', date: new Date('02/03/2017'), description: "PURCHASE SHOP A", amount: -10.00, currency: 'USD', source: 'DEBIT_CARD', balance: 250.00, reference: null, account: 'Demo' },
     { _id: '2', type: 'CREDIT', category: 'Dummy', date: new Date('02/03/2017'), description: "SALARY FROM JOB A", amount: 100.0, currency: 'USD', source: 'ACH_CREDIT', balance: 350.00, reference: null, account: 'Demo' },
     { _id: '3', type: 'DEBIT', category: 'Dummy', date: new Date('02/02/2017'), description: "PURCHASE SHOP B", amount: -15, currency: 'USD', source: 'DEBIT_CARD', balance: 335.00, reference: null, account: 'Demo' },

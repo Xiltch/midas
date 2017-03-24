@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Transaction } from '../models/transaction'
+import { Transaction } from './transaction.model'
 
 @Component({
   moduleId: module.id,
   selector: 'app-transaction',
-  templateUrl: './transaction.html',
-  styleUrls: ['./transaction.css']
+  templateUrl: './transaction-detail.component.html',
+  styleUrls: ['./transaction-detail.component.css']
 })
-export class TransactionComponent implements OnInit {
+export class TransactionDetailComponent implements OnInit {
 
   @Input()
   transaction: Transaction;

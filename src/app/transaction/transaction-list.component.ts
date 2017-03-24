@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Transaction } from '../models/transaction'
-import { TransactionService } from '../services/transaction'
+import { Transaction } from './transaction.model'
+import { TransactionService } from './transaction.service'
 
 @Component({
   moduleId: module.id,
   selector: 'app-transactions',
-  templateUrl: './transactions.html',
-  styleUrls: ['./transactions.css']
+  templateUrl: './transaction-list.component.html',
+  styleUrls: ['./transaction-list.component.css']
 })
-export class TransactionsComponent implements OnInit {
+export class TransactionListComponent implements OnInit {
 
   transactions: Transaction[];
   selectedTransaction: Transaction;

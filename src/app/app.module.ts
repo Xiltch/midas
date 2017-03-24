@@ -5,17 +5,17 @@ import { HttpModule } from '@angular/http';
 import { StoreModule } from '@ngrx/store'
 
 import { AppComponent } from './app.component';
-import { TransactionComponent } from './transaction/components/transaction';
-import { TransactionsComponent } from './transaction/components/transactions';
-import { TransactionService } from './transaction/services/transaction';
+import { TransactionDetailComponent } from './transaction/transaction-detail.component';
+import { TransactionListComponent } from './transaction/transaction-list.component';
+import { TransactionService } from './transaction/transaction.service';
 
-import { transactions } from './transaction/stores/transaction'
+import { transactions } from './transaction/transaction.store'
 
 @NgModule({
   declarations: [
     AppComponent,
-    TransactionComponent,
-    TransactionsComponent
+    TransactionDetailComponent,
+    TransactionListComponent
   ],
   imports: [
     BrowserModule,
